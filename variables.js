@@ -2,7 +2,8 @@ const accId = 123456
 let accEmail = "user@example.com"  
 var accPass = "password123"  //scope issue 
 /* prefer not to use , use let instead */
-accCity = "Abbottoabad" // we can declare variables without var, let or const but its not preffered method
+accCity = "Abbottoabad" // we can declare variables without var, 
+// let or const but its not preffered method
 
 //accId = 789012 error because const variable cannot be reassigned
 console.log(accId);

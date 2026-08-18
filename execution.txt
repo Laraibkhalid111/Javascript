@@ -1,0 +1,39 @@
+javascript execution context :
+2 phases of execution
+
+1.global execution context  (EC) 
+imp # in brower the global exectuion value of this is window 
+=> single threaded , js 
+2. function EC
+3. Eval
+code execution  => 1 memory creation phase 
+                => 2  execution phase 
+
+                1. global execution > this 
+                2. memory phase {
+                val1, val2  => undefined 
+                addnum => definition //function
+                result 1 , result 2 => undefined }
+
+                3.execution phase 
+                val1 =10
+                val2= 5
+                addnum {> new variable environment + exec thread 
+                // add num is func so whenever we have a func we will create mem phase and exec phase in na new context 
+                1.mem phase: 
+                val1, val2 ,total => undefined 
+                2.exec phase 
+                num1=10
+                num2 = 5
+                tptal=> 15 
+                return to global exectuional context  }
+
+                total = 15
+
+                // call stack 
+                global exec 
+                func exec . // lifo exec 
+                one()
+                tw0()
+                three()
+                

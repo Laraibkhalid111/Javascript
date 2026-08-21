@@ -132,3 +132,29 @@ map.set('Fr',"France")
  // It can also access the index and the entire array if needed.
  //
 
+ // reduce and filter map
+const myNumbers = [1, 2, 3, 4, 5];
+const newnum= myNumbers.filter((value) => value > 2); // filter method creates a new array with all elements that pass the test implemented by the provided function.
+console.log(newnum); // [3, 4, 5]   
+
+const book = [
+  { title: "Book 1", author: "Author 1" },
+  { title: "Book 2", author: "Author 2" },
+  { title: "Book 3", author: "Author 3" },
+  { title: "Book 4", author: "Author 4" },
+];
+
+const userbook = book.filter((book) => { return book.title === "Book 2" }); // filter method creates a new array with all elements that pass the test implemented by the provided function.
+console.log(userbook); // [{ title: "Book 2", author: "Author 2" }]
+
+const mappedNumbers = myNumbers.map((num) => num + 10);
+console.log(mappedNumbers); // [11, 12, 13, 14, 15]   // map method creates a new array with the results of calling a provided function on every element in the calling array.
+//
+
+//reduce 
+const arr= [1, 2, 3, 4, 5];
+const sum = arr.reduce((acc, currval) =>{
+   console.log(`acc: ${acc}, currval: ${currval}`);
+    return acc + currval;
+},0); // reduce method executes a reducer function on each element of the array, resulting in a single output value. The second argument (0) is the initial value of the accumulator.
+console.log(sum); // 15

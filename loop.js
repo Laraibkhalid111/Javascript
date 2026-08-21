@@ -57,12 +57,13 @@ map.set('Fr',"France")
  //console.log(map); // map gives unique key value pair
 
  for (const [key, value] of map) {
-  console.log(`${key}: ${value}`);
+ // console.log(`${key}: ${value}`);
  }
  // for off loop  can be used to itreate maps , arrays , strings
  // but it doesnt iterate objects 
 
- //FOR IN loop 
+ //FOR IN loop  
+ //for obejcts 
  const obj ={
   cpp: "C++",
   js: "JavaScript",
@@ -70,5 +71,64 @@ map.set('Fr',"France")
   java: "Java"
  }
   for (const key in obj) {
-    console.log(`${key}: ${obj[key]}`);
+    //console.log(`${key}: shortcut is  ${obj[key]}`);
   }
+
+  //for in loop for array 
+
+  const programming= ["C++", "JavaScript", "Python", "Java"]
+  for (const index in programming) {
+    //console.log(`Element at index ${index} is ${programming[index]}`);
+  }
+  for (const key in Map ){
+    console.log(key);
+  }// nothing will be printed because for in loop cannot iterate maps
+
+  /* diff between for of and for in loop is that 
+  key in for in loop is index of array and key in for of loop is value of array
+  and map and string can be iterated using for of loop but not for in loop
+  */
+
+  // for off ... array
+  // for in ... object
+   
+  //foreach loop
+
+  const numbers = [1, 2, 3, 4, 5];
+  numbers.forEach( function (value){
+   // console.log(value);
+
+  } ) // simply write func inside froeach loop , it doesnt 
+  //have a name and it is called anonymous function
+//aroow function in for each loop
+//numbers.forEach( value => console.log(value )
+ //)
+
+ function  printme(value){
+  //console.log(value);
+ }
+ numbers.forEach(printme);
+
+ numbers.forEach((value, index, arr) => {
+  //console.log(value, index, arr)
+ })
+
+ const coding= [
+  { name: "laraib",
+    age : "23"
+   },
+   { name: "ali",
+    age : "25"
+   },
+   { name : "Javascript",
+    symbol : "JS"
+   }
+ ]
+ coding.forEach ((value, index, arr) => {
+  //console.log(index, value, arr)
+  console.log(value.name); // accessing the name property of each object in the coding array
+ }) 
+ // foreach loop is used to iterate over arrays and perform a function on each element of the array. 
+ // It can also access the index and the entire array if needed.
+ //
+

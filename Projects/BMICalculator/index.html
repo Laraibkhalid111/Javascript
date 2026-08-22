@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+</head>
+<style>
+    .heading {
+        margin-top: 20px;
+        text-align: center;
+        color: #333;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .parameter{
+        text-align: center;
+        font-family: Arial sans-serif;
+        margin: 10px 0;
+        padding : 5px;
+
+    }
+
+    .calculate {
+       button{
+        display: block;
+        margin: 30px auto;
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #2a2b5c;
+        color: white;
+       }
+    }
+ 
+    .weight-guide {
+        margin-top: 30px;
+        font-family: Arial sans-serif;
+
+    }
+    #height, #weight {
+        padding: 5px;
+        font-size: 16px;
+        width: 200px;
+    }
+     .weight-guide{
+        margin-left: 20px;
+     }
+     #result {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 20px;
+        font-family: Arial sans-serif;
+     }
+</style>
+<body>
+    <form>
+    <h1 class="heading">BMI Calculator</h1>
+    <p class = "parameter"> Height in CM : <label> <input type="number" id="height" placeholder="Enter height"> </label></p>
+    <p class = "parameter"> Weight in KG : <label> <input type="number" id="weight" placeholder="Enter weight"> </label></p>
+    <div class="calculate">
+        <button id="calculate">Calculate BMI</button>
+    </div>
+    <div id="result"> </div>
+    <div class="weight-guide">
+        <h2> Weight Guide !! </h2>
+        <p> 1. Underweight: BMI < 18.5</p>
+        <p> 2. Normal weight: BMI 18.5-24.9</p>
+        <p> 3. Overweight: BMI 25-29.9</p>
+        <p> 4. Obesity: BMI ≥ 30</p>
+
+    </div>
+
+</form>
+</body>
+<script src="calculater.js"></script>
+</html>

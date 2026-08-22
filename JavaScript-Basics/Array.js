@@ -1,4 +1,4 @@
-  const myArray = [1, 2, 3, 4, 5];
+  const myArray  = [1, 2, 3, 4, 5];
    console.log(myArray[3]); //we can access the array elements by using index number, it starts from 0
 
    //shallow copy

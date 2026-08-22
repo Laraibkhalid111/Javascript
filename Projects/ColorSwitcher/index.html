@@ -1,0 +1,93 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Scheme Switcher </title>
+</head>
+<style>
+    .heading {
+
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          color: black;
+          font : bold ;
+          padding: 60px;
+
+    }
+
+    #Navy {
+        background-color: navy;
+        color: white;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 2px solid black;
+        align: center;
+    }
+    #White {
+        background-color: white;
+        color: black;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 2px solid black;
+        align: center;
+    }
+
+    #Grey {
+        background-color: grey;
+        color: white;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 2px solid black;
+        align: center;
+    }
+    #Black {
+        background-color: black;
+        color: white;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 2px solid red;
+        align: center;
+    }
+
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .text{
+        justify-content: center;
+        align-items: center;
+        color : black;
+        font :  20px bold;
+        display: flex;
+        padding: 30px;
+    }
+    
+</style>
+<body>
+    <h1 class = "heading" id = "heading">
+        Color Scheme Switcher
+
+    </h1>
+    <div class = "btn">
+      <button id = "Navy" class = "button">Navy  </button>
+      <button id = "Black" class = "button">Black  </button>
+      <button id = "White" class = "button">White  </button>
+      <button id = "Grey" class = "button">Grey  </button>
+    </div>
+    <h class = "text">
+        click on the buttons to change the color scheme 
+        of the page
+    </h>
+</body>
+    <script src="color.js"></script>
+
+</html>
